@@ -30,7 +30,26 @@ Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Baixe as dependências.
+
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+
+## 🚀 Teste
+
+# unit testes
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
 
 ## 🤔 Como contribuir
 
