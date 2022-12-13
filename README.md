@@ -31,26 +31,6 @@ Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br
 
 - Clone o projeto.
 
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-
-## 🚀 Teste
-
-# unit testes
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
