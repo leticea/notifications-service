@@ -18,5 +18,12 @@ export class CancelNotification {
   ): Promise<CancelNotificationResponse> {
     const { notificationId } = request;
 
+    const notification = await this.notificationsRepository.findById(
+      notificationId,
+    );
+
+    if (!notification) {
+      throw new Error('Notification not found');
+    }
   }
 }
