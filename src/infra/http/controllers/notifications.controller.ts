@@ -22,7 +22,7 @@ export class NotificationsController {
         content: notification.content.value,
         category: notification.category,
         recipientId: notification.recipientId,
-      }
+      },
     };
   }
 }
