@@ -25,6 +25,12 @@ describe('Get recipients notifications', () => {
       recipientId: 'recipient-1',
     });
 
-    expect(notifications).toEqual(2);
+    expect(notifications).toHaveLength(2);
+    expect(notifications).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ recipientId: 'recipient-1' }),
+        expect.objectContaining({ recipientId: 'recipient-1' }),
+      ])
+    );
   });
 });
