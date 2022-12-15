@@ -10,20 +10,34 @@ describe('Count recipients notifications', () => {
       notificationsRepository,
     );
 
-    const notification = new Notification({
-      category: 'social',
-      content: new Content('Nova solicitação de amizade!'),
-      recipientId: 'example-recipient-id',
-    });
-
-    await notificationsRepository.create(notification);
-
-    await countRecipientNotifications.execute({
-      notificationId: notification.id,
-    });
-
-    expect(notificationsRepository.notifications[0].canceledAt).toEqual(
-      expect.any(Date),
+    await notificationsRepository.create(
+      new Notification({
+        category: 'social',
+        content: new Content('Nova solicitação de amizade!'),
+        recipientId: 'recipient-1',
+      }),
     );
+
+    await notificationsRepository.create(
+      new Notification({
+        category: 'social',
+        content: new Content('Nova solicitação de amizade!'),
+        recipientId: 'recipient-1',
+      }),
+    );
+
+    await notificationsRepository.create(
+      new Notification({
+        category: 'social',
+        content: new Content('Nova solicitação de amizade!'),
+        recipientId: 'recipient-2',
+      }),
+    );
+
+    const { count } = await countRecipientNotifications.execute({
+      recipientId: 'recipient-1',
+    });
+
+    expect(count).toEqual(2);
   });
 });
