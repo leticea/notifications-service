@@ -13,9 +13,13 @@ export class PrismaNotificationsRepository implements NotificationsRepository {
       where: {
         id: notificationId,
       }
-    })
+    });
 
-    
+    if (!notification) {
+      return null;
+    }
+
+    return PrismaNotificationMapper.toDomain(notification);
   }
 
   findManyByRecipientId(recipientId: string): Promise<Notification[]> {
