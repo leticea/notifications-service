@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto desenvolvido com Node.js de uma API de notificações.
 
-Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br/)
+Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 
 ## 🚀 Como Rodar
 
@@ -29,6 +29,39 @@ Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br
 - npx prisma studio (para visualizar a página do banco de dados).
 - npm run start:dev (roda o projeto na porta localhost:3000).
 - npm run test (para rodar os testes).
+
+## 👩🏿‍💻 Rotas
+
+- **`POST /notifications`**: Rota para criação de notificações:
+
+ENVIA:
+<p align="center">
+  <img alt="post" src=".github/image.png">
+</p>
+
+RETORNA:
+<p align="center">
+  <img alt="post" src=".github/image2.png">
+</p>
+
+- **`GET /notifications/from/:recipientId`**: Rota para mostrar as notificações de um mesmo usuário:
+
+RETORNA:
+<p align="center">
+  <img alt="get" src=".github/image3.png">
+</p>
+
+- **`GET /notifications/count/from/:recipientId`**: Rota para mostrar a contagem de notificações de um mesmo usuário:
+
+RETORNA:
+<p align="center">
+  <img alt="get" src=".github/image4.png">
+</p>
+
+- **`PATCH /notifications/:id/cancel`**: Rota para cancelar notificações.
+- **`PATCH /notifications/:id/read`**: Rota para mostrar uma notificação como lida.
+- **`PATCH /notifications/:id/unread`**: Rota para mostrar uma notificação como não lida.
+
 
 ## 🤔 Como contribuir
 
