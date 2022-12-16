@@ -34,26 +34,26 @@ Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br
 
 - **`POST /notifications`**: Rota para criação de notificações:
 
-ENVIA:
+Envia:
 <p align="center">
   <img alt="post" src=".github/image.png">
 </p>
 
-RETORNA:
+Retorna:
 <p align="center">
   <img alt="post" src=".github/image2.png">
 </p>
 
 - **`GET /notifications/from/:recipientId`**: Rota para mostrar as notificações de um mesmo usuário:
 
-RETORNA:
+Retorna:
 <p align="center">
   <img alt="get" src=".github/image3.png">
 </p>
 
 - **`GET /notifications/count/from/:recipientId`**: Rota para mostrar a contagem de notificações de um mesmo usuário:
 
-RETORNA:
+Retorna:
 <p align="center">
   <img alt="get" src=".github/image4.png">
 </p>
