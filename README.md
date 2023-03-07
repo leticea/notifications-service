@@ -11,7 +11,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Nodejs](https://nodejs.org/en/) - v18.12.1 
+- [Nodejs](https://nodejs.org/en/) - v18.12.1
 - [Nestjs](https://nestjs.com/) - 9.1.5
 - [Npm](https://www.npmjs.com/) - 8.19.2
 
@@ -36,26 +36,26 @@ Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br
 
 Envia:
 <p align="center">
-  <img alt="post" src=".github/image.png">
+  <img alt="" src=".github/image.png">
 </p>
 
 Retorna:
 <p align="center">
-  <img alt="post" src=".github/image2.png">
+  <img alt="" src=".github/image2.png">
 </p>
 
 - **`GET /notifications/from/:recipientId`**: Rota para mostrar as notificações de um mesmo usuário:
 
 Retorna:
 <p align="center">
-  <img alt="get" src=".github/image3.png">
+  <img alt="" src=".github/image3.png">
 </p>
 
 - **`GET /notifications/count/from/:recipientId`**: Rota para mostrar a contagem de notificações de um mesmo usuário:
 
 Retorna:
 <p align="center">
-  <img alt="get" src=".github/image4.png">
+  <img alt="" src=".github/image4.png">
 </p>
 
 - **`PATCH /notifications/:id/cancel`**: Rota para cancelar notificações.

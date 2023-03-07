@@ -72,7 +72,7 @@ export class NotificationsController {
       category,
     });
 
-    return { 
+    return {
       notification: NotificationViewModel.toHTTP(notification),
     };
   }
