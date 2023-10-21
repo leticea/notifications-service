@@ -27,7 +27,7 @@ Evento do Ignite Lab na plataforma da [Rocketseat](https://www.rocketseat.com.br
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Entre na pasta do projeto e rode 'npm install' (use 'yarn add' se for essa a sua configuração).
+- Entre na pasta do projeto e rode 'npm install' (use 'yarn install' se for essa a sua configuração).
 - npx prisma migrate dev.
 - npx prisma studio (para visualizar a página do banco de dados).
 - npm run start:dev (roda o projeto na porta localhost:3000).
